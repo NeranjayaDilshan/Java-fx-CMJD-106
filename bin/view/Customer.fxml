@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerController">
+   <children>
+      <Label alignment="CENTER" layoutX="-5.0" layoutY="-3.0" prefHeight="95.0" prefWidth="744.0" text="Customer">
+         <font>
+            <Font size="59.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCustomerId" layoutX="42.0" layoutY="114.0" prefHeight="46.0" prefWidth="252.0" promptText="Customer ID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtSalary" layoutX="42.0" layoutY="308.0" prefHeight="46.0" prefWidth="252.0" promptText="Salary">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAddress" layoutX="42.0" layoutY="244.0" prefHeight="46.0" prefWidth="252.0" promptText="Address">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtCustomerName" layoutX="42.0" layoutY="180.0" prefHeight="46.0" prefWidth="252.0" promptText="Customer Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <JFXButton layoutX="153.0" layoutY="371.0" onAction="#btnSaveCustomerOnAction" prefHeight="46.0" prefWidth="141.0" style="-fx-background-color: #f1c40f;" text="Save Customer">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <TableView layoutX="306.0" layoutY="114.0" prefHeight="307.0" prefWidth="429.0">
+        <columns>
+          <TableColumn prefWidth="64.0" text="ID" />
+          <TableColumn prefWidth="149.0" text="Name" />
+            <TableColumn prefWidth="113.0" text="Address" />
+            <TableColumn prefWidth="102.0" text="Salary" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

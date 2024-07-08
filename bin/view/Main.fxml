@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <Label alignment="CENTER" layoutX="82.0" layoutY="14.0" prefHeight="159.0" prefWidth="433.0" text="Thogakade" textFill="#f21111">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="221.0" onAction="#btnCustomerOnAction" prefHeight="107.0" prefWidth="178.0" style="-fx-background-color: #e67e22; -fx-background-radius: 20;" text="Customer">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="210.0" layoutY="221.0" onAction="#btnItemOnAction" prefHeight="107.0" prefWidth="178.0" style="-fx-background-color: #3498db; -fx-background-radius: 20;" text="Item">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="405.0" layoutY="221.0" onAction="#btnOrderOnAction" prefHeight="107.0" prefWidth="178.0" style="-fx-background-color: #1abc9c; -fx-background-radius: 20;" text="Orders">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
